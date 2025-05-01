@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Anti-Off-Tasker</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="w3-styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Lato", sans-serif
+        }
+
+        .w3-bar,
+        h1,
+        button {
+            font-family: "Montserrat", sans-serif
+        }
+
+        .fa-anchor,
+        .fa-coffee {
+            font-size: 200px
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://kit.fontawesome.com/320b33fac5.js" crossorigin="anonymous"></script>
+    <div class="w3-top">
+        <div class="w3-bar cg1 w3-card w3-left-align w3-large">
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large cg1"
+                href="javascript:void(0);" onclick="mobile_menu()" title="Toggle Navigation Menu"><i
+                    class="fa fa-bars"></i></a>
+            <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+            <a href="prices.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Prices</a>
+            <a href="why.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Why This Product?</a>
+        </div>
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+            <a href="prices.html" class="w3-bar-item w3-button w3-padding-large">Prices</a>
+            <a href="why.html" class="w3-bar-item w3-button w3-padding-large">Why This Product</a>
+        </div>
+    </div>
+
+    <script>
+        function mobile_menu() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+        
+    </script>
+    <script src="javascript/petal_utilities.js"></script>
+    <header class="w3-container cg1 w3-center" style="padding:128px 16px">
+        <h1 class="w3-margin w3-jumbo">Prices</h1>
+        <p class="w3-xlarge">We have 3 different models</p>
+        <!-- <a href="https://florr.io/">
+            <button class="w3-button cg2 w3-padding-large w3-large w3-margin-top">Play</button></a> -->
+    </header>
+    <!-- Section 1 -->
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-twothird">
+                <h1>Basic Model</h1>
+                <h5 class="w3-padding-32">The Basic Model costs #30</h5>
+
+                <p class="w3-text-grey">Basic model includes the basic offtask catching websites etc and the stopper</p>
+            </div>
+
+            <div class="w3-third w3-center">
+                <img src="images/BasicModel.png" class="w3-padding-64 w3-text-red">
+            </div>
+        </div>
+    </div>
+    <!-- Section 2-->
+    <div class="w3-row-padding w3-light-grey w3-container">
+        <div class="w3-content">
+            <div class="w3-twothird">
+                <h1>Premium & Premium+</h1>
+                <h5 class="w3-padding-32">Premium costs $40 and Premium+ costs $45
+                </h5>
+
+                <p class="w3-text-grey">Premium includes offtask catcher, built in parent warning system, and AI checker for offtask websites
+                    Premium+ includes everything from previous models, and includes parental and teacher confirmation etc.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>
